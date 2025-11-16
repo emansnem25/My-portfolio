@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title> Accueil </title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <!--Création du menu de notre page web-->
+    <nav>
+        <div class="identity"> NOUTAI Emansignien Gédéon </div>
+        <div class="cote">
+            <ul>
+                <li class="menu-index"> <a href="index.html"> Accueil </a></li>
+                <li class="menu-Apropos"> <a href="A propos.html"> Á propos </a></li>
+                <li class="menu-Competences"> <a href="Competences.html"> Compétences </a></li>
+                <li class="menu-Projets"> <a href="Projets.html"> Projets </a></li>
+                <li class="menu-Contacts"> <a href="Contacts.html"> Contacts </a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--Introduction-->
+    <div class="Intro">
+        <H1 id="gret"> Hello Bienvenu à vous </H1>
+        <p class="pepe"> Je suis Gédéon Emansignien NOUTAI, spécialiste
+             en planification et gestion des espaces urbains et ruraux. </p>
+        <p class="pepe"> Développeur en devenir, passionné par le design et le web.</p>
+        <a href="Projets.html" id="prj"> Voir mes Projets </a>
+    </div>
+
+    <!--A propos-->
+    <div class="Prop">
+        <h1 id="prp"> Á Propos</h1>
+        <div class="proptexte">
+            <div>
+                <p class="p1"> Je suis NOUTAI, spécialiste en planification territoriale <br> 
+                je suis passionné par l'aménagement du territoire, l'urbanisme <br>
+                 la biogéographie et la protection de l'environnement </p>
+                <p class="p1"> Je suis actuellement étudiant en developpement web <br> 
+                et je cherche à améliorer mes compétences en Javascript, Css et HTML. </p>
+                <p class="p1"> Je suis inspiré par les nouvelles technologies pour la création <br>
+                 de solution durable pour le développement territoriale <br> la gestion 
+                durable des ressources et la participation citoyenne.</p>
+                <a href="A propos.html" id="Initprop"> Consulter </a>
+            </div> 
+            <img src="./img/1758796707664.jpg" id="picture">
+        </div>
+    </div>
+    
+
+    <!--Compétences-->
+    <div class="skills">
+        <h1 id="compe"> Compétences </h1>
+        <div class="skillselem">
+            <div class="softskills">
+                <h2> Soft Skills</h2>
+                <ul>
+                    <li> Analyse spatiale</li>
+                    <li> Planification urbaine et rurale </li>
+                    <li> Gestion urbaine</li>
+                    <li> Aménagement du territoire </li>
+                    <li> Cartographie, SIG, télédétection </li>
+                </ul>
+            </div>
+       
+
+            <div class="hardskills">
+            <h2> Hard Skills</h2>
+                <ul>
+                    <li> HTML</li>
+                    <li> CSS</li>
+                    <li> Javascript</li>
+                    <li> Vs Code </li>
+                    <li> Python </li>
+                </ul>
+            </div>   
+        </div>    
+    </div>
+
+    <!-- Projets -->
+     <div class="Projets">
+        <h1 id="Pojno"> Mes Projets </h1>
+        <div class="procon">
+            <div class="Proj1">
+                <h4> Mémoire de licence professionnelle sur <br> l'extension urbaine et 
+                la préservation des réserves agraires </h4>
+                <a href="./img/RICHSEN.pptx" id="memo"> Consulté </a>
+            </div>
+
+            <div class="Proj2">
+                <h4> Réalisation d'un plan de voirie et d'infrastructures urbaine </h4>
+                <a href="./img/lotissement.pdf" id="vrio"> Voir </a>
+            </div>
+        </div>
+     </div>
+
+    <!--Contacts-->
+    <div class="formu">
+        <p class="pero"> Vous avez un projet en tête ?<br> n'hésitez pas à me contacter</p>
+        <form>
+            <div class="Conts">
+                <div class="rensei">
+                    <div class="ttop">
+                        <label for="surname"> Votre prénom </label> 
+                        <input type="text" id="surname"  name="surname" placeholder="Prénom">
+                    </div>
+
+                    <div class="yik">
+                        <label for="nom"> Votre nom</label>
+                        <input type="text" id="nom" name="nom" placeholder="Nom">
+                    </div>
+                </div>
+            </div>
+
+            <div class="ecrit">
+                <label for="Sujet" id="subject"> Votre sujet d'intêret </label>
+                <input type="text" id="subjet"  name="subject"   placeholder="Sujet d'intêret">
+            </div>
+
+            <div class="parlos">
+                <label for="coment"> Description du sujet </label>
+                <textarea name="Description" id="coment" placeholder="D'escription du sujet"></textarea>
+            </div>
+            <button type="submit"> Envoyer </button>
+        </form>
+    </div>
+
+    <!--pied de page-->
+    <div class="close">
+       <div class="pieddepage">
+        <p class="tra"> Designed by NOUTAI Emansignien Gédéon with HTML CSS Javascript</p>
+        <p class="tra"> Tous droit réservés - 2025 </p>
+       </div> 
+    </div>
+
+    <script>
+        function envoie(){
+            const prenom = document.getElementById("surname").value;
+            const name = document.getElementById("nom").value;
+            const sujet = document.getElementById("Sujet").value;
+            const comentaire = document.getElementById("coment").value;
+            if(!prenom||! name===""){
+                alert("Vueillez saisir les champs.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

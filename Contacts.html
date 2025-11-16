@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title> Contacts </title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <nav>
+        <div class="identity"> NOUTAI Emansignien Gédéon </div>
+        <div class="cote">
+            <ul>
+                <li class="menu-index"> <a href="index.html"> Accueil </a></li>
+                <li class="menu-Apropos"> <a href="A propos.html"> Á propos </a></li>
+                <li class="menu-Competences"> <a href="Competences.html"> Compétences </a></li>
+                <li class="menu-Projets"> <a href="Projets.html"> Projets </a></li>
+                <li class="menu-Contacts"> <a href="Contacts.html"> Contacts </a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="formu">
+        <form>
+            <div class="Conts">
+                <div class="rensei">
+                    <div class="ttop">
+                        <label for="surname"> Votre prénom </label> 
+                        <input type="text" id="surname"  name="surname" placeholder="Prénom">
+                    </div>
+
+                    <div class="yik">
+                        <label for="nom"> Votre nom</label>
+                        <input type="text" id="nom" name="nom" placeholder="Nom">
+                    </div>
+                </div>
+            </div>
+
+            <div class="ecrit">
+                <label for="Sujet" id="subject"> Votre sujet d'intêret </label>
+                <input type="text" id="subjet"  name="subject"   placeholder="Sujet d'intêret">
+            </div>
+
+            <div class="parlos">
+                <label for="coment"> Description du sujet </label>
+                <textarea name="Description" id="coment" placeholder="D'escription du sujet"></textarea>
+            </div>
+            <button type="submit"> Envoyer </button>
+        </form>
+    </div>
+    <div class="close">
+       <div class="pieddepage">
+        <p class="tra"> Designed by NOUTAI Emansignien Gédéon with HTML CSS Javascript</p>
+        <p class="tra"> Tous droit réservés - 2025 </p>
+       </div> 
+    </div>
+
+    <script>
+        function envoie(){
+            const prenom = document.getElementById("surname").value;
+            const name = document.getElementById("nom").value;
+            const sujet = document.getElementById("Sujet").value;
+            const comentaire = document.getElementById("coment").value;
+            if(!prenom||! name===""){
+                alert("Vueillez saisir les champs.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>
